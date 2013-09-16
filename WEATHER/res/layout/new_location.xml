@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/newLoc"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:textSize="22sp"
+        android:background="@drawable/textbg"
+        android:padding="10dp"
+        android:text="Enter city, state / zip" />
+
+    <EditText
+        android:id="@+id/ETnewPlace"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/textbg"
+        android:ems="14"
+        android:textSize="25sp"
+        android:padding="10dp"
+        android:hint="EX. Chicago, IL or 62901" >
+
+        <requestFocus />
+    </EditText>
+    
+    <Button
+        android:id="@+id/Bsubmit"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:onClick="onAddLocation"
+        android:text="+"
+        android:textSize="50sp" />
+    
+    <ListView 
+        android:id="@+id/listLocations"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+		
+		</LinearLayout>
+		

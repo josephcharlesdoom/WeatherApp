@@ -1,0 +1,54 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.joe.joe"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="15" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="Weather App!"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="Weather App!" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+ 
+        <activity
+            android:label="Radar"
+            android:name=".RadarScreen" >
+            
+        </activity>
+        
+        <activity
+            android:label="Details"
+            android:name=".DetailsScreen" >
+            
+        </activity>
+        
+        <activity
+            android:label="Extended"
+            android:name=".ExtendedDayScreen" >
+            
+        </activity>
+        
+        <activity
+            android:label="NewLocation"
+            android:name=".NewLocationScreen" >
+            
+        </activity>
+        
+    </application>
+
+</manifest>

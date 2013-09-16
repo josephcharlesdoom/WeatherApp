@@ -1,0 +1,114 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/clear"
+    android:paddingTop="10dp" >
+
+    <LinearLayout
+        android:id="@+id/locationLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15sp"
+        android:layout_marginRight="15sp"
+        android:background="@drawable/textbg"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:text="Loading..."
+            android:textSize="36sp" />
+
+        <TextView
+            android:id="@+id/textCurrentCondition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/textbg" >
+
+        <TextView
+            android:id="@+id/TVmessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10sp"
+            android:text="Good evening Joe! it looks like its going to rain around 4 a.m., with freezing temeratures. Watch out for ice in the morning!"
+            android:textSize="18dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/TVtime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/locationLayout"
+        android:layout_below="@id/locationLayout"
+        android:text="..." />
+
+    <TextView
+        android:id="@+id/textTemperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/locationLayout"
+        android:layout_below="@+id/TVtime"
+        android:layout_marginRight="37dp"
+        android:text="00"
+        android:textSize="150sp" />
+
+    <TextView
+        android:id="@+id/TVdeg"
+        android:layout_width="wrap_content"
+        android:layout_height="224dp"
+        android:layout_alignRight="@+id/locationLayout"
+        android:layout_alignTop="@+id/textTemperature"
+        android:text="o"
+        android:textSize="42sp" />
+
+    <TextView
+        android:id="@+id/TVlo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="180sp"
+        android:layout_marginLeft="65sp"
+        android:text="0"
+        android:textSize="26sp" />
+
+    <TextView
+        android:id="@+id/TVhi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150sp"
+        android:layout_marginLeft="65sp"
+        android:text="0"
+        android:textSize="26sp" />
+
+    <TextView
+        android:id="@+id/TVh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150sp"
+        android:layout_marginLeft="25sp"
+        android:text="HI: "
+        android:textSize="26sp" />
+
+    <TextView
+        android:id="@+id/TVl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:layout_marginTop="180sp"
+        android:layout_marginLeft="25sp"
+        android:text="LO: "
+        android:textSize="26sp" />
+
+</RelativeLayout>

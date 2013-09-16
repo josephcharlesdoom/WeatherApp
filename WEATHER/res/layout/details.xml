@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:text="Current conditions for" />
+
+    <TextView
+        android:id="@+id/textLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView3"
+        android:text="Carbondale, IL"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/textCurrentCondition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textLocation"
+        android:layout_marginTop="22dp"
+        android:text="cloudy"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/textFeelsLike"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textCurrentCondition"
+        android:layout_toRightOf="@+id/textView3"
+        android:text="Feels like" />
+
+    <TextView
+        android:id="@+id/textWind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textFeelsLike"
+        android:layout_toRightOf="@+id/textView3"
+        android:text="Wind" />
+
+    <TextView
+        android:id="@+id/textWindChill"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textWind"
+        android:layout_toRightOf="@+id/textView3"
+        android:text="Wind Chill" />
+
+    <TextView
+        android:id="@+id/textHumidity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textWindChill"
+        android:layout_below="@+id/textWindChill"
+        android:text="Humidity" />
+
+    <TextView
+        android:id="@+id/textDewPoint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textHumidity"
+        android:layout_below="@+id/textHumidity"
+        android:text="Dew Point" />
+
+    <TextView
+        android:id="@+id/textTemperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textDewPoint"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="26dp"
+        android:text="72"
+        android:textSize="75sp" />
+
+</RelativeLayout>
